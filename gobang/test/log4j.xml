@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<appender name="FileLog" class="org.apache.log4j.DailyRollingFileAppender">
+       <param name="File"   value="logs/gobang.log" />
+        <param name="Append" value="false" />	    	
+		<param name="DatePattern" value="'.'yyyy-MM-dd"/>
+		<param name="Encoding" value="UTF-8"/>
+		<layout class="org.apache.log4j.PatternLayout">
+		  <param name="ConversionPattern" value="%d %-5p [%t] [%c{1}] %m%n"/>
+		</layout>
+	</appender>
+	
+	<root>
+		<priority value="DEBUG"/>
+		<appender-ref ref="FileLog"/>¬
+	</root>
+</log4j:configuration>

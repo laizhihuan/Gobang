@@ -1,4 +1,4 @@
-# gobang
+# gobang Îå×ÓÆå
 
 FIXME: write description
 
